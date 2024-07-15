@@ -1,22 +1,20 @@
-# iNoteBook (Frontend)
+# Dish Dashboard
 
-Welcome to iNoteBook, your secure cloud-based notebook solution built on the powerful MERN Stack. iNoteBook offers a seamless experience for users to store, manage, and access their notes with confidence and convenience.
+Dish Dashboard is a web application that helps manage and display dish information in real-time. This project is an assignment for demonstrating a full-stack solution using the MERN stack with real-time updates.
 
 ## Introduction
 
-iNoteBook is designed with a focus on security, simplicity, and versatility. Whether you're jotting down ideas, organizing tasks, or keeping track of important information, iNoteBook provides the tools you need to stay productive and organized.
+Dish Dashboard is designed to manage a collection of dishes, displaying them with images, names and published or not published state. Users can toggle the publish status of each dish, with real-time updates reflected across all connected clients. The application is built using React for the frontend, Node.js and Express.js for the backend, and MongoDB for the database. Socket.IO is used for real-time updates, ensuring all clients are synchronized.
 
 ## Key Features
 
-- **Secure Authentication:** Protect your data with secure sign-up and login mechanisms, leveraging Bcrypt.js for password encryption.
-- **Efficient Database Management:** Utilize MongoDB Atlas as the backend database to ensure efficient storage and retrieval of your notes.
-- **Strong Password Enforcement:** Maintain account security with enforced strong password requirements during registration.
-- **Token-based Authentication:** Ensure secure user authentication with JSON Web Tokens (JWT), providing a robust authentication mechanism.
-- **Flexible Note Management:** Easily add, update, delete, and view notes, complete with timestamps for effective organization and tracking.
-- **Responsive Design:** Enjoy a seamless user experience across devices, thanks to iNoteBook's responsive design principles.
-- **Modern Technology Stack:** Built on the MERN Stack, iNoteBook leverages MongoDB, Express.js, React.js, and Node.js for a powerful and scalable application architecture. Additionally, Bootstrap and Font Awesome are integrated to enhance the user interface and experience.
-
-Whether you're a student, professional, or anyone in need of a reliable digital notebook, iNoteBook is here to streamline your note-taking experience. Get started today and unleash the full potential of your ideas with iNoteBook.
+- Display a list of dishes with images, names and published or not published state.
+- Toggle the publish status of dishes.
+- Real-time updates using Socket.IO.
+- Responsive design for various screen sizes.
+- Backend API for managing dishes.
+- Frontend hosted on GitHub Pages.
+- Backend hosted on Glitch.
 
 ## Getting Started
 
@@ -24,32 +22,55 @@ To get a local copy up and running, follow these simple steps.
 
 ### Prerequisites
 
-- Node.js
-- npm or yarn
+- Node.js and npm
+- MongoDB
 
-### Installation
+### Database Setup
 
-1. Clone the repo
+1. Ensure MongoDB is running on your local machine.
+2. Create a database named `DishesDB`.
+3. Create a collection named `dishes`.
+4. Change the MongoDB URL in db.js file inside server directory.
+
+### Backend Setup
+
+1. Clone the repository:
    ```sh
    git clone https://github.com/amar-codingenthusiast/dish-dashboard.git
 2. Change directory:
    ```sh
-   cd dish-dashboard
+   cd dish-dashboard/server
 3. Install dependencies:
    ```sh
    npm install
-4. Run the app:
+4. Run the backend server:
    ```sh
-   npm run start
-5. Open your browser and visit http://localhost:3000 to view the app.
+   nodemon index.js
+
+### Frontend Setup
+
+1. Navigate to the frontend directory:
+   ```sh
+   cd ../client
+2. Install dependencies:
+   ```sh
+   npm install
+3. Run the frontend server:
+   ```sh
+   npm start
+
+### Running the Application
+
+1. Open your browser and navigate to http://localhost:3000 to view the frontend.
+2. Ensure the backend server is running on http://localhost:5000.
 
 ## Features
 
 ### Database Management
 - MongoDB Atlas is utilized as the database to store user information and notes.
 
-### Real-time update
-- Socket.io
+### Real-Time Updates with Socket.IO
+- Socket.IO is integrated to provide real-time updates across all clients. When the publish status of a dish is toggled, the change is immediately broadcasted to all connected clients, keeping them in sync.
 
 ### Responsive Design
 - The application features a responsive design, ensuring optimal user experience across various devices.
