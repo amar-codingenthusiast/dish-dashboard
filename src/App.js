@@ -4,6 +4,7 @@ import io from "socket.io-client";
 import { Container, Row, Col } from "react-bootstrap";
 import DishCard from "./Components/DishCard";
 
+// const Backend_URL = "http://localhost:5000";
 const Backend_URL = "https://dish-dashboard-backend.glitch.me";
 const socket = io(Backend_URL);
 
