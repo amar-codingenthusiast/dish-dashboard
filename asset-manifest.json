@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dish-dashboard/static/css/main.2915971d.css",
+    "main.js": "/dish-dashboard/static/js/main.d68a0e12.js",
+    "index.html": "/dish-dashboard/index.html",
+    "main.2915971d.css.map": "/dish-dashboard/static/css/main.2915971d.css.map",
+    "main.d68a0e12.js.map": "/dish-dashboard/static/js/main.d68a0e12.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2915971d.css",
+    "static/js/main.d68a0e12.js"
+  ]
+}
