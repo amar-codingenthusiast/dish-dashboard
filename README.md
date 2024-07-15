@@ -4,11 +4,11 @@ Dish Dashboard is a web application that helps manage and display dish informati
 
 ## Introduction
 
-Dish Dashboard is designed to manage a collection of dishes, displaying them with images, names and published or not published state. Users can toggle the publish status of each dish, with real-time updates reflected across all connected clients. The application is built using React for the frontend, Node.js and Express.js for the backend, and MongoDB for the database. Socket.IO is used for real-time updates, ensuring all clients are synchronized.
+Dish Dashboard is designed to manage a collection of dishes, displaying them with images, names and published or not published status. Users can toggle the publish status of each dish, with real-time updates reflected across all connected clients. The application is built using React for the frontend, Node.js and Express.js for the backend, and MongoDB for the database. Socket.IO is used for real-time updates, ensuring all clients are synchronized. React-Bootstrap is used for enhanced UI and responsiveness for all devices.
 
 ## Key Features
 
-- Display a list of dishes with images, names and published or not published state.
+- Display a list of dishes with images, names and published or not published status.
 - Toggle the publish status of dishes.
 - Real-time updates using Socket.IO.
 - Responsive design for various screen sizes.
@@ -51,7 +51,7 @@ To get a local copy up and running, follow these simple steps.
 
 1. Navigate to the frontend directory:
    ```sh
-   cd ../client
+   cd ../
 2. Install dependencies:
    ```sh
    npm install
@@ -61,23 +61,37 @@ To get a local copy up and running, follow these simple steps.
 
 ### Running the Application
 
-1. Open your browser and navigate to http://localhost:3000 to view the frontend.
-2. Ensure the backend server is running on http://localhost:5000.
+1. Open your browser and navigate to `http://localhost:3000` to view the frontend.
+2. Ensure the backend server is running on `http://localhost:5000`.
 
 ## Features
 
 ### Database Management
-- MongoDB Atlas is utilized as the database to store user information and notes.
+- MongoDB Atlas is utilized as the database to store dish information, including dish names, images, and publish status.
 
 ### Real-Time Updates with Socket.IO
 - Socket.IO is integrated to provide real-time updates across all clients. When the publish status of a dish is toggled, the change is immediately broadcasted to all connected clients, keeping them in sync.
 
-### Responsive Design
-- The application features a responsive design, ensuring optimal user experience across various devices.
-
 ### Built with Modern Technologies
 - Utilizes the MERN Stack (MongoDB, Express.js, React.js, Node.js) for robust and efficient development.
-- Integration of React-Bootstrap for enhanced UI/UX and responsiveness to all devices.
+
+### Integration of React-Bootstrap
+- Enhanced UI/UX and responsiveness to all devices through the use of React-Bootstrap components.
+
+### Toggle Button
+- A custom toggle button is implemented for changing the publish status of each dish, with a visually appealing sliding animation.
+
+### Card Component
+- Each dish is displayed in a card component that includes the dish image, name and a button to toggle its publish status. The card background color changes to indicate the active/inactive state of the dish.
+
+### Environment Variables
+- Environment variables are used to manage configuration settings securely, including database connection strings and server port numbers.
+
+### Deployment
+- The application is deployed using Glitch for the backend and GitHub Pages for the frontend, making it easily accessible and shareable.
+
+### Assignment Project
+- This project is developed as an assignment to demonstrate proficiency in full-stack development and real-time data synchronization.
 
 ## Built with
  - MERN Stack (MongoDB, Express.js, React.js, Node.js)
@@ -88,7 +102,7 @@ To get a local copy up and running, follow these simple steps.
 ## Deployment
  - Backend deployed on Glitch
  - Frontend deployed on GitHub Pages
- - Live version of iNoteBook app [here](https://amar-codingenthusiast.github.io/dish-dashboard)
+ - Live version of Dish Dashboard app [here](https://amar-codingenthusiast.github.io/dish-dashboard)
 
 ## Contributing
  - Contributions are welcome! Here's how you can contribute:
