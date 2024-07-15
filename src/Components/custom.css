@@ -1,0 +1,37 @@
+.toggle-switch {
+	position: relative;
+	width: 50px;
+	height: 25px;
+	background-color: #ccc;
+	border-radius: 25px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.toggle-switch::after {
+	content: "";
+	position: absolute;
+	width: 21px;
+	height: 21px;
+	border-radius: 50%;
+	background-color: white;
+	top: 2px;
+	left: 2px;
+	transition: transform 0.3s;
+}
+
+.toggle-switch.active {
+	background-color: #4caf50;
+}
+
+.toggle-switch.active::after {
+	transform: translateX(25px);
+}
+
+.card-active {
+	background-color: #d4edda !important;
+}
+
+.card-inactive {
+	background-color: #f8d7da !important;
+}
