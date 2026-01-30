@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import DishCard from "./Components/DishCard";
 
 // const Backend_URL = "http://localhost:5000";
-const Backend_URL = "https://dish-dashboard-backend.glitch.me";
+const Backend_URL = "https://dish-dashboard.onrender.com";
 const socket = io(Backend_URL);
 
 const App = () => {
